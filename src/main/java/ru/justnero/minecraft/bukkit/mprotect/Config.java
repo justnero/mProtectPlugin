@@ -26,7 +26,7 @@ public class Config {
     
     public static boolean isOnlineMod = false;
     public static boolean isChatMod = false;
-    public static List<String> autogive = Collections.EMPTY_LIST;
+    public static List<String> autogive = Collections.emptyList();
     public static String language = "en";
     
     public static void load() throws IOException, InvalidConfigurationException {
