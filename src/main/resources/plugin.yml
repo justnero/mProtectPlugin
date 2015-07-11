@@ -1,0 +1,32 @@
+name: mProtect
+version: 3.0
+author: Nero
+softdepend: [Vault, WorldEdit, WorldGuard] 
+website: http://justnero.ru/
+main: ru.justnero.minecraft.bukkit.mprotect.Bootstrap
+commands:
+    rset:
+        usage: /rset [protect name]
+        description: Setup protect
+    radd:
+        usage: /radd  [protect name] (player)
+        description: Add member
+    rdel:
+        usage: /rdel  [protect name] (player)
+        description: Delete member
+    rflag:
+        usage: /rflag (protect name) (flag) [state]
+        description: Set or erase(if none state) flag
+    rrem:
+        usage: /rrem [protect name]
+        description: Remove protect
+    rinfo:
+        usage: /rinfo [protect name]
+        description: Protect info
+    mc:
+        usage: /mc (message)
+        description: Mod Chat
+    mprotect:
+        aliases: [mp]
+        usage: /mprotect (action)
+        description: Admin control

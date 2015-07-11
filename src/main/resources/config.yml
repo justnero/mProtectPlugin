@@ -1,0 +1,28 @@
+# Language files is inside of jar file
+language: en
+
+modules:
+# It will deny to add offline users to protect
+  online: true
+# Secret chat chanel, could be used for admins
+  chat: true
+
+# This protects will be given to everyone
+autogive: []
+
+# Protects configuration list
+protects:
+# Protect name, used for setting it up via /rset [protect name]
+ default:
+# Region prefix, use unique for every protect
+    prefix: 'home_'
+# How many times protect will enlarge for every member, 0 if will not
+    resizeTill: 6
+# Enlarge by X on north-south, Y on west-east and Z on up-down axis. Not needed if resizeTill is 0
+    resize: [5,5,10]
+# Inital size of protect on the same axises as resize, except central block
+    size: [60,60,256]
+# Allowed flags, supports all default types
+    flags: ['pvp','snow-fall','ice-melt','ice-form','entry']
+# Specific worlds limitation, empty for any
+    worlds: []
