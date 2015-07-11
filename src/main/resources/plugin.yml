@@ -1,5 +1,5 @@
 name: mProtect
-version: 3.0
+version: ${version}
 author: Nero
 softdepend: [Vault, WorldEdit, WorldGuard] 
 website: http://justnero.ru/

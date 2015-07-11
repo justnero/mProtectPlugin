@@ -1,1 +1,18 @@
 apply plugin:'java'
+
+version = "3.0"
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        include 'plugin.yml'
+        expand 'version':project.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'plugin.yml'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
