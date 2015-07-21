@@ -28,7 +28,7 @@ public class Point3D {
     }
     
     @Override
-    public Point3D clone() {
+    public Point3D clone() throws CloneNotSupportedException {
         return new Point3D(pointX,pointY,pointZ);
     }
     
